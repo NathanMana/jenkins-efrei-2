@@ -58,7 +58,7 @@
     - name: Git checkout website
       become: yes
       git:
-        repo: "{{ app_repo }}"
+        repo: "{{ user `app_repo` }}"
         dest: /var/www/html
       notify:
         - restart apache2
