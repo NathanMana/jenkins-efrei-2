@@ -58,7 +58,7 @@
     - name: Git checkout website
       become: yes
       git:
-        repo: "{{ user `app_repo` }}"
+        repo: https://github.com/cloudacademy/static-website-example.git
         dest: /var/www/html
       notify:
         - restart apache2
