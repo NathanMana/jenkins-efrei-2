@@ -35,7 +35,7 @@
         {
             "type": "ansible",
             "playbook_file": "/var/lib/jenkins/workspace/pipeline-ami/project/CICD_TP_Build_AMI/Ansible/play.yml",
-            "extra_arguments": ["-e", "env={{user `env`}} app_repo={{user `app_repo`}} app_port={{user `app_port`}} app_name={{user `app_name`}}"],
+            "extra_arguments": ["-e", "env={{user `env`}} app_repo={{user `app_repo`}} app_port={{user `app_port`}}"],
             "ansible_env_vars": [
                 "ANSIBLE_SSH_ARGS='-oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=ssh-rsa'",
                 "ANSIBLE_HOST_KEY_CHECKING=False"
