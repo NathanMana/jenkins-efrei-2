@@ -1,13 +1,8 @@
 regions:
-- "global"
-- "eu-west-1"
-- "eu-west-2"
-- "eu-west-3"
 - "ap-northeast-3"
 
 account-blacklist:
 - "999999999999"
 
-#484564612387
 accounts:
   "619259251561": {}
