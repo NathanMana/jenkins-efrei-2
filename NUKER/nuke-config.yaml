@@ -14,4 +14,4 @@ accounts:
     filters:
       EC2Instance:
         - type: glob
-          value: "name -> dev*"
+          value: "name -> dev_test"
