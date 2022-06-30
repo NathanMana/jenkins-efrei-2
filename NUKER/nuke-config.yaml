@@ -1,5 +1,5 @@
 regions:
-- "ap-northeast-3"
+- "eu-west-1"
 
 account-blacklist:
 - "999999999999"
