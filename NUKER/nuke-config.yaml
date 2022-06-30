@@ -10,8 +10,4 @@ account-blacklist:
 
 #484564612387
 accounts:
-  "619259251561":
-    filters:
-      EC2Instance:
-        - type: glob
-          value: "name -> dev_test"
+  "619259251561": {}
