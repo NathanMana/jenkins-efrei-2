@@ -22,23 +22,29 @@ accounts:
       - property: tag:Name
         type: glob
         value: "dev_test"
+        invert: true
       EC2Image:
       - property: Name
         type: glob
         value: "dev_*"
+        invert: true
       EC2Subnet:
       - property: Name
         type: glob
         value: "dev_*"
+        invert: true
       EC2InternetGateway:
       - property: Name
         type: glob
         value: "dev_*"
+        invert: true
       EC2NATGateway:
       - property: Name
         type: glob
         value: "dev_*"
+        invert: true
       EC2VPC:
       - property: Name
         type: glob
         value: "dev_*"
+        invert: true
