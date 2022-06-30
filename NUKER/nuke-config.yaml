@@ -5,4 +5,8 @@ account-blacklist:
 - "999999999999"
 
 accounts:
-  "619259251561": {}
+  "619259251561":
+    filters:
+      EC2Instance:
+        type : glob
+        value: "name -> dev_test"
