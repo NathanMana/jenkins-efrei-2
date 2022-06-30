@@ -10,4 +10,24 @@ accounts:
       EC2Instance:
       - property: Name
         type: glob
-        value: "dev_test*"
+        value: "dev_*"
+      EC2Image:
+      - property: Name
+        type: glob
+        value: "dev_*"
+      EC2Subnet:
+      - property: Name
+        type: glob
+        value: "dev_*"
+      EC2InternetGateway:
+      - property: Name
+        type: glob
+        value: "dev_*"
+      EC2NATGateway:
+      - property: Name
+        type: glob
+        value: "dev_*"
+      EC2VPC:
+      - property: Name
+        type: glob
+        value: "dev_*"
