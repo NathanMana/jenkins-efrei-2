@@ -21,30 +21,30 @@ accounts:
       EC2Instance:
       - property: tag:Name
         type: glob
-        value: "{{env.USER}}_test"
+        value: "{{app_env}}*"
         invert: true
       EC2Image:
       - property: Name
         type: glob
-        value: "dev_*"
+        value: "{{app_env}}*"
         invert: true
       EC2Subnet:
       - property: Name
         type: glob
-        value: "dev_*"
+        value: "{{app_env}}*"
         invert: true
       EC2InternetGateway:
       - property: Name
         type: glob
-        value: "dev_*"
+        value: "{{app_env}}*"
         invert: true
       EC2NATGateway:
       - property: Name
         type: glob
-        value: "dev_*"
+        value: "{{app_env}}*"
         invert: true
       EC2VPC:
       - property: Name
         type: glob
-        value: "dev_*"
+        value: "{{app_env}}*"
         invert: true
