@@ -21,7 +21,7 @@ accounts:
       EC2Instance:
       - property: tag:Name
         type: glob
-        value: "${USER}_test"
+        value: "{{env.USER}}_test"
         invert: true
       EC2Image:
       - property: Name
