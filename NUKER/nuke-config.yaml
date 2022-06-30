@@ -19,7 +19,7 @@ accounts:
   "619259251561":
     filters:
       EC2Instance:
-      - property: Name
+      - property: tag:Name
         type: glob
         value: "dev_test"
       EC2Image:
