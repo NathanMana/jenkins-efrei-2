@@ -4,13 +4,24 @@ regions:
 account-blacklist:
 - "999999999999"
 
+resource-types:
+  targets:
+  - EC2Instance
+  - EC2Image
+  - EC2Subnet
+  - EC2InternetGateway
+  - EC2NATGateway
+  - EC2VPC
+  # - S3Bucket
+  # - S3Object
+  
 accounts:
   "619259251561":
     filters:
       EC2Instance:
       - property: Name
         type: glob
-        value: "dev_*"
+        value: "dev_test"
       EC2Image:
       - property: Name
         type: glob
