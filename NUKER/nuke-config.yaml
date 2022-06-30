@@ -8,5 +8,5 @@ accounts:
   "619259251561":
     filters:
       EC2Instance:
-        type : glob
+        type: glob
         value: "name -> dev_test"
