@@ -3,8 +3,6 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "mubuckets3"
-    region = "eu-west-1"
   }
 }
 
