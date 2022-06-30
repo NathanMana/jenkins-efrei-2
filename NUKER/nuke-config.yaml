@@ -7,5 +7,10 @@ regions:
 account-blacklist:
 - "999999999999"
 
+#484564612387
 accounts:
-  "484564612387":  {}
+  "619259251561":
+    filters:
+      EC2Instance:
+        - type: glob
+          value: "name -> dev*"
