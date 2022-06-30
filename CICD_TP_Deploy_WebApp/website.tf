@@ -19,7 +19,6 @@ variable "app_name" {
   default = "WebApache"
 }
 
-
 ####################################################################
 # On recherche la derniere AMI créée avec le TAG PackerAnsible-Apache
 data "aws_ami" "WebApache" {
