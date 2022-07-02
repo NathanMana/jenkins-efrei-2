@@ -17,7 +17,7 @@ resource-types:
   - S3Object
   
 accounts:
-  "619259251561":
+  "439428458691":
     filters:
       EC2Instance:
       - property: tag:Name
