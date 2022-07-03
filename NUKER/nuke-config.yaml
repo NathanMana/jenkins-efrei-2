@@ -48,8 +48,13 @@ resource-types:
   - IAMUserPolicyAttachment
   
 accounts:
-  "439428458691": {}
-    # filters:
+  "439428458691":
+    filters:
+        EC2VPC:
+        - property: tag:Name
+          type: glob
+          value: "{{app_env}}*"
+
     #   EC2Instance:
     #   - property: tag:Name
     #     type: glob

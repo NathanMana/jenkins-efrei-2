@@ -1,6 +1,6 @@
 {
     "variables": {
-        "region": "eu-west-3",
+        "region": "eu-west-1",
         "ssh_username": "ubuntu",
         "instance_type": "t2.micro",
         "temporary_security_group_source_cidrs": "{{user `ec2_ip`}}/32",
