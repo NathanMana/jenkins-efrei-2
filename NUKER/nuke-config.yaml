@@ -19,6 +19,8 @@ resource-types:
   - ELBv2TargetGroup
   - EC2Volume
   - EC2SecurityGroup
+  - EC2Address
+  - EC2NetworkInterface
   excludes:
   - S3Bucket
   - S3Object
@@ -87,6 +89,16 @@ accounts:
         value: "{{app_env}}*"
         # invert: true
       EC2SecurityGroup:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2Address:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2NetworkInterface:
       - property: Name
         type: glob
         value: "{{app_env}}*"
