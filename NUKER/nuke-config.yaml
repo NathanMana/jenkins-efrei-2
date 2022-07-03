@@ -17,7 +17,6 @@ resource-types:
   # - ELB
   # - ELBv2
   # - ELBv2TargetGroup
-  # - EC2Volume
   # - EC2SecurityGroup
   # - EC2Address
   # - EC2NetworkInterface
@@ -111,11 +110,6 @@ accounts:
         type: glob
         value: "{{app_env}}*"
         # invert: true
-      EC2SecurityGroup:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
       EC2Address:
       - property: Name
         type: glob
@@ -167,11 +161,6 @@ accounts:
         value: "{{app_env}}*"
         # invert: true
       EC2VPCEndpoint:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2Volume:
       - property: Name
         type: glob
         value: "{{app_env}}*"
