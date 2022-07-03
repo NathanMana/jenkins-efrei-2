@@ -54,6 +54,7 @@ accounts:
         - property: tag:Name
           type: glob
           value: "{{app_env}}*"
+          invert: true
 
     #   EC2Instance:
     #   - property: tag:Name
