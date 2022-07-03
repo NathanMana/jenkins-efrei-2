@@ -12,6 +12,13 @@ resource-types:
   - EC2InternetGateway
   - EC2NATGateway
   - EC2VPC
+  - EC2DHCPOption
+  - EC2RouteTable
+  - ELB
+  - ELBv2
+  - ELBv2TargetGroup
+  - EC2Volume
+  - EC2SecurityGroup
   excludes:
   - S3Bucket
   - S3Object
@@ -45,6 +52,11 @@ accounts:
         value: "{{app_env}}*"
         # invert: true
       EC2VPC:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2DHCPOption:
       - property: Name
         type: glob
         value: "{{app_env}}*"
