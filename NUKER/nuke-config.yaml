@@ -48,125 +48,125 @@ resource-types:
   - IAMUserPolicyAttachment
   
 accounts:
-  "439428458691":
-    filters:
-      EC2Instance:
-      - property: tag:Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2Image:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2Subnet:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2InternetGateway:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2NATGateway:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2VPC:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2DHCPOption:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2RouteTable:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      ELB:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      ELBv2:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      ELBv2TargetGroup:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2Volume:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2Address:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2NetworkInterface:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      AutoScalingGroup:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      AutoScalingPlansScalingPlan:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2ClientVpnEndpoint:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2ClientVpnEndpointAttachment:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2InternetGatewayAttachment:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2SecurityGroup:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2TGW:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2TGWAttachment:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      EC2VPCEndpoint:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
-      ECSService:
-      - property: Name
-        type: glob
-        value: "{{app_env}}*"
-        # invert: true
+  "439428458691": {}
+    # filters:
+    #   EC2Instance:
+    #   - property: tag:Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2Image:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2Subnet:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2InternetGateway:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2NATGateway:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2VPC:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2DHCPOption:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2RouteTable:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   ELB:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   ELBv2:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   ELBv2TargetGroup:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2Volume:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2Address:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2NetworkInterface:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   AutoScalingGroup:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   AutoScalingPlansScalingPlan:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2ClientVpnEndpoint:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2ClientVpnEndpointAttachment:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2InternetGatewayAttachment:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2SecurityGroup:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2TGW:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2TGWAttachment:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   EC2VPCEndpoint:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
+    #   ECSService:
+    #   - property: Name
+    #     type: glob
+    #     value: "{{app_env}}*"
+    #     # invert: true
