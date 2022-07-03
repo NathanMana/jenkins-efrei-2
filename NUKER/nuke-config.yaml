@@ -28,6 +28,25 @@ resource-types:
   excludes:
   - S3Bucket
   - S3Object
+  - IAMGroup
+  - IAMGroupPolicy
+  - IAMGroupPolicyAttachment
+  - IAMInstanceProfile
+  - IAMInstanceProfileRole
+  - IAMLoginProfile
+  - IAMOpenIDConnectProvider
+  - IAMPolicy
+  - IAMRole
+  - IAMRolePolicy
+  - IAMRolePolicyAttachment
+  - IAMSAMLProvider
+  - IAMServerCertificate
+  - IAMServiceSpecificCredential
+  - IAMUser
+  - IAMUserAccessKey
+  - IAMUserGroupAttachment
+  - IAMUserPolicy
+  - IAMUserPolicyAttachment
   
 accounts:
   "439428458691":
