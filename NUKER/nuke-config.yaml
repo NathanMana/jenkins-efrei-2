@@ -61,3 +61,33 @@ accounts:
         type: glob
         value: "{{app_env}}*"
         # invert: true
+      EC2RouteTable:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      ELB:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      ELBv2:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      ELBv2TargetGroup:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2Volume:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2SecurityGroup:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
