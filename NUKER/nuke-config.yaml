@@ -5,22 +5,26 @@ account-blacklist:
 - "999999999999"
 
 resource-types:
-  targets:
-  - EC2Instance
-  - EC2Image
-  - EC2Subnet
-  - EC2InternetGateway
-  - EC2NATGateway
-  - EC2VPC
-  - EC2DHCPOption
-  - EC2RouteTable
-  - ELB
-  - ELBv2
-  - ELBv2TargetGroup
-  - EC2Volume
-  - EC2SecurityGroup
-  - EC2Address
-  - EC2NetworkInterface
+  # targets:
+  # - EC2Instance
+  # - EC2Image
+  # - EC2Subnet
+  # - EC2InternetGateway
+  # - EC2NATGateway
+  # - EC2VPC
+  # - EC2DHCPOption
+  # - EC2RouteTable
+  # - ELB
+  # - ELBv2
+  # - ELBv2TargetGroup
+  # - EC2Volume
+  # - EC2SecurityGroup
+  # - EC2Address
+  # - EC2NetworkInterface
+  # - AutoScalingGroup
+  # - AutoScalingPlansScalingPlan
+  # - ECSService
+  # - EC2Volume
   excludes:
   - S3Bucket
   - S3Object
@@ -99,6 +103,61 @@ accounts:
         value: "{{app_env}}*"
         # invert: true
       EC2NetworkInterface:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      AutoScalingGroup:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      AutoScalingPlansScalingPlan:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2ClientVpnEndpoint:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2ClientVpnEndpointAttachment:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2InternetGatewayAttachment:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2SecurityGroup:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2TGW:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2TGWAttachment:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2VPCEndpoint:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      EC2Volume:
+      - property: Name
+        type: glob
+        value: "{{app_env}}*"
+        # invert: true
+      ECSService:
       - property: Name
         type: glob
         value: "{{app_env}}*"
